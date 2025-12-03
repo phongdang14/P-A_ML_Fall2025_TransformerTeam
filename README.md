@@ -1,5 +1,6 @@
 # Course: Machine Learning (Fall 2025)
 Instructor: Dr. Michela Negro
+
 The wiki page of the course can be found via this [link](https://github.com/nmik/P-A_ML_Fall2025/wiki).
 
 ## Team: Transformer
