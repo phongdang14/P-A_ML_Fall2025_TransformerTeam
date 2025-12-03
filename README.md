@@ -13,7 +13,7 @@ We perform supernova classifications using three different ML algorithms:
 - Boosted decision tree (BDT)
 
 ## Concluding remarks
-- Data preprocessing is very important, which in our case is necessary to handle outliers.
+- Data preprocessing is very important, which in our case is necessary to handle outliers and the extreme difference between the scales of the features.
 - Model 2 outperforms Model 1 even though it has less data. Probably because it has more features.
 - BDT classifier is the most effective, which agrees with the paper. Meanwhile, SVM classifier does not work very well.
 - Downsampling does not improve classification. The reason might be that our downsampling process results in a too small dataset, making it difficult for the classifiers to learn.
