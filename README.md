@@ -14,3 +14,8 @@ We perform supernova classifications using three different ML algorithms:
 
 ## Acknowledgement
 This project was largely motivated by the work of Michelle Lochner et al. (ApJ Supplement Series, 225:31, 2016), which can be accessed via this [link](https://iopscience.iop.org/article/10.3847/0067-0049/225/2/31).
+
+## Repository structure
+- The main notebook is ```Team transformer.ipynb```, which contains the main analysis and results of the project. It was run on Google Colab, thus at the top, you can see it is mounted to Google Drive. When you run this notebook locally, two changes need to be made as instructed in the notebook.
+- Folder ```data/``` contains all the data used for the training.
+- Folder ```supplement/``` contains all the draft notebooks that trained the two feature extraction models seperately for each classifier. 
