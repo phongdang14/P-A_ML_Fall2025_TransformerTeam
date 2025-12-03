@@ -6,11 +6,19 @@ The wiki page of the course can be found via this [link](https://github.com/nmik
 ## Team: Transformer
 Members: Valarie Milton, Phong Dang (owner of this repository), Trang Huynh, Eric Borowski, Nageeb Zaman
 
-## Objecttive
+## Objective
 We perform supernova classifications using three different ML algorithms:
 - Multi-layer perceptron neural network (MLP)
 - Support vector machine (SVM)
 - Boosted decision tree (BDT)
+
+## Data Source
+
+
+## Feature extraction
+### Model 1:
+
+### Model 2:
 
 ## Concluding remarks
 - Data preprocessing is very important, which in our case is necessary to handle outliers and the extreme difference between the scales of the features.
