@@ -8,9 +8,16 @@ Members: Valarie Milton, Phong Dang (owner of this repository), Trang Huynh, Eri
 
 ## Objecttive
 We perform supernova classifications using three different ML algorithms:
-- Multi-layer perceptron neural network (deep neural network)
-- Support vector machine
-- Boosted decision tree
+- Multi-layer perceptron neural network (MLP)
+- Support vector machine (SVM)
+- Boosted decision tree (BDT)
+
+## Concluding remarks
+- Data preprocessing is very important, which in our case is necessary to handle outliers.
+- Model 2 outperforms Model 1 even though it has less data. Probably because it has more features.
+- BDT classifier is the most effective, which agrees with the paper. Meanwhile, SVM classifier does not work very well.
+- Downsampling does not improve classification. The reason might be that our downsampling process results in a too small dataset, making it difficult for the classifiers to learn.
+- In Model 2, we did a better job than the paper. Yay 😎!
 
 ## Acknowledgement
 This project was largely motivated by the work of Michelle Lochner et al. (ApJ Supplement Series, 225:31, 2016), which can be accessed via this [link](https://iopscience.iop.org/article/10.3847/0067-0049/225/2/31).
