@@ -12,6 +12,16 @@ We perform supernova classifications using three different ML algorithms:
 - Support vector machine (SVM)
 - Boosted decision tree (BDT)
 
+[EB WORKING HERE]
+## Motivations
+- why do we care about classfiying SNe
+
+## Caveats 
+- treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
+  - probably affects accuracy of classification (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology) **show plot of well-sampled light curve with slightly different evolutions in different bands**
+  - could be valuable to include color information in the model, maybe more physics to discover (beyond scope of this work)
+[EB WORKING HERE]
+
 ## Data Source
 
 
