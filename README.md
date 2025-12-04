@@ -6,15 +6,15 @@ The wiki page of the course can be found via this [link](https://github.com/nmik
 ## Team: Transformer
 Members: Valarie Milton, Phong Dang (owner of this repository), Trang Huynh, Eric Borowski, Nageeb Zaman
 
+## Motivations
+Classifying supernovae (SNe) is the first step in studying the underlying physics of these energetic events. In the era of sensitive all-sky surveys which discover many SNe per night, it is not possible to preform spectroscopic classifcation of all of these events as there are significant operational overheads associated with spectroscopy and, for all but the brightest and most nearby events, long exposures are necessary to gather sufficient signal-to-noise ratios to make signinficant claims. Therefore, it is necessary to develop a robust, automated method for classifying many SNe from solely photometric data.
+
 ## Objective
-We perform supernova classifications using three different ML algorithms:
+We perform SN classifications using three different ML algorithms:
 - Multi-layer perceptron neural network (MLP)
 - Support vector machine (SVM)
 - Boosted decision tree (BDT)
 
-[EB WORKING HERE]
-## Motivations
-- why do we care about classfiying SNe
 
 ## Caveats 
 - treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
