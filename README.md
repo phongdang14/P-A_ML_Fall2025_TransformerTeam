@@ -23,7 +23,11 @@ We perform supernova classifications using three different ML algorithms:
 [EB WORKING HERE]
 
 ## Data Source
-
+- [Open Supernova Catalog Database](https://iopscience.iop.org/article/10.3847/1538-4357/835/1/64):
+  - We obtained all observed SNe discovered from pre-1990 to 2024 [AstroCats](https://github.com/astrocatalogs/astrocats)
+- [Center for Astrophysics Supernova Data Archive](https://lweb.cfa.harvard.edu/supernova/SNarchive.html):
+  - 64 stripped-envelope CCSNe from [Bianco et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJS..213...19B/abstract)
+  - (60 Type II Supernova Light Curves and Spectra From the CfA) from [Hicken M., et al. (2017)](https://iopscience.iop.org/article/10.3847/1538-4365/aa8ef4)
 
 ## Feature extraction
 ### Model 1:
