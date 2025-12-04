@@ -32,8 +32,8 @@ We perform supernova classifications using three different ML algorithms:
 ## Feature extraction
 ### Model 1:
 - 5 fitting parameters ($`A, \phi, \sigma, k, \psi`$) per filter band by [Newling et al. (2011)](https://academic.oup.com/mnras/article/414/3/1987/1035457)
-
   $$ F(t) = A (\frac{t-\phi}{\sigma})^k \exp(-\frac{t-\phi}{\sigma}) e^k $$
+  
 ### Model 2:
 - 6 fitting parameters ($`A, B, t_0, t_1, T_{fall}, T_{rise}`$) per filter band by [Karpenka et al. (2013)](https://academic.oup.com/mnras/article/429/2/1278/1038192)
   
