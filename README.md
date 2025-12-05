@@ -40,9 +40,9 @@ $$ F(t) = A[1+B(t-t_1)^2] \frac{\exp[-(t-t_0)/T_{\text{fall}}]}{1+\exp[-(t-t_0)/
 - Downsampling does not improve classification. The reason might be that our downsampling process results in a too small dataset, making it difficult for the classifiers to learn.
 
 ## Caveats 
-- Currently, w treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
-- This might affect accuracy of classification (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology)
-- It could be valuable to include color information in the model, maybe more physics to discover, which is beyond the scope of this project.
+- Currently, we treat light curves in different bands as separate events but many correspond to the same SN.
+- This might affect classification accuracy (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology).
+- There are no parameters in the models for color information or spectral evolution. Implementing these could improve classifcation accuracy or allow for discovery of unique phenomena between SNe of the same class.
 
 ## Acknowledgement
 This project was largely motivated by the work of Michelle Lochner et al. (ApJ Supplement Series, 225:31, 2016), which can be accessed via this [link](https://iopscience.iop.org/article/10.3847/0067-0049/225/2/31).
