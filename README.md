@@ -32,14 +32,12 @@ We perform photometric classifications of SNe using three different ML algorithm
 ## Feature extraction
 ### Model 1:
 - 5 fitting parameters ($`A, \phi, \sigma, k, \psi`$) per filter band by [Newling et al. (2011)](https://academic.oup.com/mnras/article/414/3/1987/1035457)
-$$
-F(t) = A \left( \frac{t-\phi}{\sigma} \right)^k \exp\left(-\frac{t-\phi}{\sigma}\right) e^k
-$$
+$$ F(t) = A \left( \frac{t-\phi}{\sigma} \right)^k \exp\left(-\frac{t-\phi}{\sigma}\right) e^k $$
   
 ### Model 2:
 - 6 fitting parameters ($`A, B, t_0, t_1, T_{fall}, T_{rise}`$) per filter band by [Karpenka et al. (2013)](https://academic.oup.com/mnras/article/429/2/1278/1038192)
   
-$$F(t) = A[1+B(t-t_1)^2] \frac{\exp[-(t-t_0)/T_{\text{fall}}]}{1+\exp[-(t-t_0)/T_{\text{rise}}]} $$
+$$ F(t) = A[1+B(t-t_1)^2] \frac{\exp[-(t-t_0)/T_{\text{fall}}]}{1+\exp[-(t-t_0)/T_{\text{rise}}]} $$
 
 ## Concluding remarks
 - Data preprocessing is very important, which in our case is necessary to handle outliers and the extreme difference between the scales of the features.
