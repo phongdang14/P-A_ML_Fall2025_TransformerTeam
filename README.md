@@ -51,5 +51,5 @@ This project was largely motivated by the work of Michelle Lochner et al. (ApJ S
 - The main notebook is ```Team transformer.ipynb```, which contains the main analysis and results of the project. It was run on Google Colab, thus at the top, you can see it is mounted to Google Drive. When you run this notebook locally, two changes need to be made as instructed in the notebook.
 - Folder ```data/``` contains all the data used for the training.
 - Folder ```supplement/``` contains all the draft notebooks that trained the two feature extraction models seperately for each classifier.
-- Folder ```trim_time/``` is related to our attempt to fine-tune the fitting process by limitting the lightcurves to 20 days before the explosion.
+- Folder ```trim_time/``` is related to our attempt to fine-tune the fitting process by limitting the lightcurves to 20 days for Model 1 and 15 days for Model 2 before the explosion.
 - Two extra python scripts herein are for fitting the data.
