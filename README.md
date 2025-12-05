@@ -32,6 +32,7 @@ We perform photometric classifications of SNe using three different ML algorithm
 ## Feature extraction
 ### Model 1:
 - 5 fitting parameters ($`A, \phi, \sigma, k, \psi`$) per filter band by [Newling et al. (2011)](https://academic.oup.com/mnras/article/414/3/1987/1035457)
+
 $$ F(t) = A \left( \frac{t-\phi}{\sigma} \right)^k \exp\left(-\frac{t-\phi}{\sigma}\right) e^k $$
   
 ### Model 2:
