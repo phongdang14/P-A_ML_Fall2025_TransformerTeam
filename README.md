@@ -20,7 +20,6 @@ We perform photometric classifications of SNe using three different ML algorithm
 - treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
   - probably affects accuracy of classification (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology) **show plot of well-sampled light curve with slightly different evolutions in different bands**
   - could be valuable to include color information in the model, maybe more physics to discover (beyond scope of this work)
-[EB WORKING HERE]
 
 ## Data Source
 - [Open Supernova Catalog Database](https://iopscience.iop.org/article/10.3847/1538-4357/835/1/64):
@@ -42,10 +41,9 @@ $$ F(t) = A[1+B(t-t_1)^2] \frac{\exp[-(t-t_0)/T_{\text{fall}}]}{1+\exp[-(t-t_0)/
 
 ## Concluding remarks
 - Data preprocessing is very important, which in our case is necessary to handle outliers and the extreme difference between the scales of the features.
-- Model 2 outperforms Model 1 even though it has less data. Probably because it has more features.
-- BDT classifier is the most effective, which agrees with the paper. Meanwhile, SVM classifier does not work very well.
+- Model 2 outperforms Model 1 even though it has less data. Probably because it has more features and accounts for double peak light curves
+- Model 1 seems to extract features very well for type IIn supernovae, evidenced by generally better AUC than other classes.
 - Downsampling does not improve classification. The reason might be that our downsampling process results in a too small dataset, making it difficult for the classifiers to learn.
-- In Model 2, we did a better job than the paper. Yay 😎!
 
 ## Acknowledgement
 This project was largely motivated by the work of Michelle Lochner et al. (ApJ Supplement Series, 225:31, 2016), which can be accessed via this [link](https://iopscience.iop.org/article/10.3847/0067-0049/225/2/31).
