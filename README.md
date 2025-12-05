@@ -1,4 +1,4 @@
-# Course: Machine Learning (Fall 2025)
+# Project for Machine Learning Course (Fall 2025)
 Instructor: Dr. Michela Negro
 
 The wiki page of the course can be found via this [link](https://github.com/nmik/P-A_ML_Fall2025/wiki).
@@ -14,12 +14,6 @@ We perform photometric classifications of SNe using three different ML algorithm
 - Multi-layer perceptron neural network (MLP)
 - Support vector machine (SVM)
 - Boosted decision tree (BDT)
-
-
-## Caveats 
-- treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
-  - probably affects accuracy of classification (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology) **show plot of well-sampled light curve with slightly different evolutions in different bands**
-  - could be valuable to include color information in the model, maybe more physics to discover (beyond scope of this work)
 
 ## Data Source
 - [Open Supernova Catalog Database](https://iopscience.iop.org/article/10.3847/1538-4357/835/1/64):
@@ -45,10 +39,17 @@ $$ F(t) = A[1+B(t-t_1)^2] \frac{\exp[-(t-t_0)/T_{\text{fall}}]}{1+\exp[-(t-t_0)/
 - Model 1 seems to extract features very well for type IIn supernovae, evidenced by generally better AUC than other classes.
 - Downsampling does not improve classification. The reason might be that our downsampling process results in a too small dataset, making it difficult for the classifiers to learn.
 
+## Caveats 
+- Currently, w treat light curves in different bands as discrete events (4500 * 5 light curves) but we know that many of these light curves in different bands correspond to the same SN (~4500 real events)
+- This might affect accuracy of classification (if more r' band light curves go into creating the trained model, it will be weighted more heavily to that light curve morphology)
+- It could be valuable to include color information in the model, maybe more physics to discover, which is beyond the scope of this project.
+
 ## Acknowledgement
 This project was largely motivated by the work of Michelle Lochner et al. (ApJ Supplement Series, 225:31, 2016), which can be accessed via this [link](https://iopscience.iop.org/article/10.3847/0067-0049/225/2/31).
 
 ## Repository structure
 - The main notebook is ```Team transformer.ipynb```, which contains the main analysis and results of the project. It was run on Google Colab, thus at the top, you can see it is mounted to Google Drive. When you run this notebook locally, two changes need to be made as instructed in the notebook.
 - Folder ```data/``` contains all the data used for the training.
-- Folder ```supplement/``` contains all the draft notebooks that trained the two feature extraction models seperately for each classifier. 
+- Folder ```supplement/``` contains all the draft notebooks that trained the two feature extraction models seperately for each classifier.
+- Folder ```trim_time/``` is related to our attempt to fine-tune the fitting process by limitting the lightcurves to 20 days before the explosion.
+- Two extra python scripts herein are for fitting the data.
